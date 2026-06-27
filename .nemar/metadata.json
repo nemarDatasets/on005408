@@ -3,7 +3,7 @@
   "pipeline_stage": "validated",
   "title": "The effect of speech masking on the human subcortical response to continuous speech",
   "description": "This dataset comprises auditory brainstem response (ABR) recordings from 25 normal-hearing participants exposed to continuous speech under varying masking conditions. Participants listened to peaky speech from one to five simultaneous talkers at different signal-to-noise ratios (clean, 0 dB, -3 dB, -6 dB SNR), as well as click trains, while EEG was recorded. The study investigates how speech masking affects subcortical neural encoding of naturally produced speech in human listeners.",
-  "methods_description": "EEG recordings were collected from 25 participants (ages 19-37 years) with normal hearing using a 48 kHz sampling rate via ER-2 insert earphones. Stimuli included randomized click trains (40 Hz average rate, 10 minutes total) and peaky speech from male narrators (30 minutes per SNR condition). Participants sat in a sound-isolating booth while stimuli were presented at 65 dB SPL (71 dB for 5 talkers). Data were recorded in Brain Products format and include stimulus files with audio and regressors for deconvolution analysis.",
+  "methods_description": "EEG recordings were collected from 25 participants (ages 19-37 years, mean ± SD: 23.4 ± 5.5) with normal hearing (audiometric thresholds ≤20 dB HL from 500-8000 Hz). Stimuli included randomized click trains at 40 Hz (60 × 10 s trials) and peaky speech from male narrators at four SNR conditions (clean, 0 dB, -3 dB, -6 dB), each presented for 30 minutes at 65 dB SPL through ER-2 insert earphones at 48 kHz sampling rate. Participants sat in a sound-isolating booth while resting or watching silent captioned videos. EEG was recorded in Brain Products format and preprocessed using custom Python scripts.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -25,10 +25,10 @@
       "term": "speech perception"
     },
     {
-      "term": "auditory masking"
+      "term": "masking"
     },
     {
-      "term": "subcortical processing"
+      "term": "subcortical encoding"
     },
     {
       "term": "continuous speech"
