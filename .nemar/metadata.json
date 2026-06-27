@@ -1,0 +1,33 @@
+{
+  "version": "2.0",
+  "dataset_id": "on005408",
+  "source": "openneuro",
+  "source_id": "ds005408",
+  "title": "The effect of speech masking on the human subcortical response to continuous speech",
+  "authors": {
+    "Melissa J. Polonenko": {},
+    "Ross K. Maddox": {}
+  },
+  "license": "CC0",
+  "dataset_type": "raw",
+  "related_identifiers": [
+    {
+      "identifier": "10.18112/openneuro.ds005408.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsIdenticalTo"
+    }
+  ],
+  "pipeline_stage": "seeded",
+  "bids_version": "1.7.0",
+  "recording_modality": [
+    "eeg"
+  ],
+  "datatypes": [
+    "eeg"
+  ],
+  "funding_references": [
+    {
+      "funder_name": "NIDCD R01DC017962"
+    }
+  ]
+}
