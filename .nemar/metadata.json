@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "The effect of speech masking on the human subcortical response to continuous speech",
+  "description": "This dataset comprises auditory brainstem response (ABR) recordings from 25 normal-hearing participants exposed to continuous speech under varying masking conditions. Participants listened to peaky speech from one to five simultaneous talkers at different signal-to-noise ratios (clean, 0 dB, -3 dB, -6 dB SNR), as well as click trains, while EEG was recorded. The study investigates how speech masking affects subcortical neural encoding of naturally produced speech in human listeners.",
+  "methods_description": "EEG recordings were collected from 25 participants (ages 19-37 years) with normal hearing using a 48 kHz sampling rate via ER-2 insert earphones. Stimuli included randomized click trains (40 Hz average rate, 10 minutes total) and peaky speech from male narrators (30 minutes per SNR condition). Participants sat in a sound-isolating booth while stimuli were presented at 65 dB SPL (71 dB for 5 talkers). Data were recorded in Brain Products format and include stimulus files with audio and regressors for deconvolution analysis.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -12,53 +14,6 @@
       "orcid": "0000-0003-2668-0238"
     }
   },
-  "related_identifiers": [
-    {
-      "identifier": "10.18112/openneuro.ds005408.v1.0.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
-    },
-    {
-      "identifier": "10.1523/ENEURO.0561-24.2025",
-      "identifier_type": "DOI",
-      "relation_type": "References"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/on005408",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005408",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    }
-  ],
-  "funding_references": [
-    {
-      "funder_name": "NIDCD",
-      "award_number": "R01DC017962"
-    }
-  ],
-  "resource_type_general": "Dataset",
-  "modalities": [
-    "eeg"
-  ],
-  "resource_type_specific": "EEG Dataset",
-  "sizes": [
-    "0.0 KB (1 files)"
-  ],
-  "formats": [
-    ".eeg",
-    ".hdf5",
-    ".json",
-    ".md",
-    ".tsv",
-    ".vhdr",
-    ".vmrk"
-  ],
-  "description": "This dataset comprises auditory brainstem response (ABR) recordings from 25 normal-hearing participants exposed to continuous speech under varying masking conditions. Participants listened to peaky speech from one to five simultaneous talkers at different signal-to-noise ratios (clean, 0 dB, -3 dB, -6 dB SNR), as well as click trains, while EEG was recorded. The study investigates how speech masking affects subcortical neural encoding of naturally produced speech, utilizing a recently developed method for ABR extraction to continuous speech stimuli.",
-  "methods_description": "EEG recordings were collected from 25 participants (ages 19-37 years, mean 23.4 ± 5.5 years) with normal hearing (audiometric thresholds ≤20 dB HL from 500-8000 Hz). Stimuli included randomized click trains (40 Hz average rate, 60 × 10 s trials) and peaky speech from male narrators at four SNR conditions (clean, 0 dB, -3 dB, -6 dB SNR corresponding to 1, 2, 3, and 5 talkers). All stimuli were presented at 65 dB SPL through ER-2 insert earphones at 48 kHz sampling rate in a sound-isolating booth. EEG was recorded in Brain Products format and processed using custom Python scripts with expyfun for stimulus control.",
   "keywords": [
     {
       "term": "auditory brainstem response"
@@ -79,5 +34,51 @@
       "term": "continuous speech"
     }
   ],
-  "source_hash": "3fbf78c804bda89b65367bbc668cda61d7e07ef37f3429dd85ee80ca82d3a956"
+  "related_identifiers": [
+    {
+      "identifier": "10.1523/ENEURO.0561-24.2025",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on005408",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005408",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005408.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "NIDCD",
+      "award_number": "R01DC017962"
+    }
+  ],
+  "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "sizes": [
+    "40.6 GB (2128 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".hdf5",
+    ".json",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk",
+    ".yml"
+  ],
+  "source_hash": "b1a00b55e840b4996bf45132c0ab79ebfa1d0a28408f7193691ad1b8fb0d6fdc"
 }
