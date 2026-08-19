@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "The effect of speech masking on the human subcortical response to continuous speech",
-  "description": "This dataset comprises auditory brainstem response (ABR) recordings from 25 normal-hearing participants exposed to continuous speech under varying masking conditions. Participants listened to peaky speech from one to five simultaneous talkers at different signal-to-noise ratios (clean, 0 dB, -3 dB, -6 dB SNR), as well as click trains, while EEG was recorded. The study investigates how speech masking affects subcortical neural encoding of naturally produced speech in human listeners.",
-  "methods_description": "EEG recordings were collected from 25 participants (ages 19-37 years, mean ± SD: 23.4 ± 5.5) with normal hearing (audiometric thresholds ≤20 dB HL from 500-8000 Hz). Stimuli included randomized click trains at 40 Hz (60 × 10 s trials) and peaky speech from male narrators at four SNR conditions (clean, 0 dB, -3 dB, -6 dB), each presented for 30 minutes at 65 dB SPL through ER-2 insert earphones at 48 kHz sampling rate. Participants sat in a sound-isolating booth while resting or watching silent captioned videos. EEG was recorded in Brain Products format and preprocessed using custom Python scripts.",
+  "description": "This dataset contains EEG recordings used to derive auditory brainstem responses (ABRs) to continuous, naturally uttered speech under varying levels of speech masking. Data were collected from 25 normal-hearing adult participants presented with click trains and 'peaky speech' stimuli from one to five simultaneously presented talkers at different signal-to-noise ratios. The study aims to characterize how masking affects subcortical neural encoding of speech in human listeners, building on prior methods for deriving speech-ABRs.",
+  "methods_description": "EEG was recorded from participants seated in a darkened sound-isolating booth who rested or watched silent captioned videos. Stimuli included randomized click trains (40 Hz average rate, 60 x 10s trials) and peaky speech from up to five male narrators at four SNR levels (clean, 0 dB, -3 dB, -6 dB), presented at 65 dB SPL via ER-2 insert earphones connected to an RME Babyface Pro sound card at 48 kHz sampling rate. Stimulus presentation was controlled using custom Python scripts with expyfun. Raw EEG data are provided in BrainVision format (.eeg, .vhdr, .vmrk), with stimulus regressor files provided in HDF5 format.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -16,29 +16,31 @@
   },
   "keywords": [
     {
-      "term": "auditory brainstem response"
-    },
-    {
       "term": "EEG"
     },
     {
-      "term": "speech perception"
+      "term": "Auditory Brainstem Response"
     },
     {
-      "term": "masking"
+      "term": "Speech Perception",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D013067"
     },
     {
-      "term": "subcortical encoding"
+      "term": "auditory masking"
     },
     {
-      "term": "continuous speech"
+      "term": "continuous speech encoding"
+    },
+    {
+      "term": "subcortical auditory processing"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "10.1523/ENEURO.0561-24.2025",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on005408",
@@ -46,14 +48,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005408",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds005408.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005408",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
