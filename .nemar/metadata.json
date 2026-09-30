@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "The effect of speech masking on the human subcortical response to continuous speech",
-  "description": "This dataset contains EEG recordings used to derive auditory brainstem responses (ABRs) to continuous, naturally uttered speech under varying levels of speech masking. Data were collected from 25 normal-hearing adult participants presented with click trains and 'peaky speech' stimuli from one to five simultaneously presented talkers at different signal-to-noise ratios. The study aims to characterize how masking affects subcortical neural encoding of speech in human listeners, building on prior methods for deriving speech-ABRs.",
-  "methods_description": "EEG was recorded from participants seated in a darkened sound-isolating booth who rested or watched silent captioned videos. Stimuli included randomized click trains (40 Hz average rate, 60 x 10s trials) and peaky speech from up to five male narrators at four SNR levels (clean, 0 dB, -3 dB, -6 dB), presented at 65 dB SPL via ER-2 insert earphones connected to an RME Babyface Pro sound card at 48 kHz sampling rate. Stimulus presentation was controlled using custom Python scripts with expyfun. Raw EEG data are provided in BrainVision format (.eeg, .vhdr, .vmrk), with stimulus regressor files provided in HDF5 format.",
+  "description": "EEG dataset of auditory brainstem responses (ABRs) recorded from 25 normal-hearing adults listening to continuous peaky speech from one to five simultaneous male talkers, plus click trains. It was collected to examine how speech masking affects subcortical neural encoding of naturally uttered speech. Speech conditions were clean, 0 dB, -3 dB and -6 dB SNR.",
+  "methods_description": "Participants sat in a darkened sound-isolating booth and rested or watched silent captioned videos while EEG was recorded in BrainVision format. Stimuli were presented at 65 dB SPL per story through ER-2 insert earphones and an RME Babyface Pro sound card, controlled with custom expyfun Python scripts. Stimuli were 10-minute randomized 40 Hz click trains and 30 minutes of peaky speech per SNR condition, with story files randomized. Trigger codes marked trial onset and trial identity.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -19,21 +19,24 @@
       "term": "EEG"
     },
     {
-      "term": "Auditory Brainstem Response"
+      "term": "auditory brainstem response"
+    },
+    {
+      "term": "speech masking"
+    },
+    {
+      "term": "peaky speech"
+    },
+    {
+      "term": "continuous speech"
+    },
+    {
+      "term": "subcortical encoding"
     },
     {
       "term": "Speech Perception",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D013067"
-    },
-    {
-      "term": "auditory masking"
-    },
-    {
-      "term": "continuous speech encoding"
-    },
-    {
-      "term": "subcortical auditory processing"
     }
   ],
   "related_identifiers": [
@@ -70,7 +73,7 @@
     "eeg"
   ],
   "sizes": [
-    "40.6 GB (2128 files)"
+    "37.84 GB (2128 files)"
   ],
   "formats": [
     ".eeg",
