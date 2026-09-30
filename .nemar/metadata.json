@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "The effect of speech masking on the human subcortical response to continuous speech",
-  "description": "EEG dataset of auditory brainstem responses (ABRs) recorded from 25 normal-hearing adults listening to continuous peaky speech from one to five simultaneous male talkers, plus click trains. It was collected to examine how speech masking affects subcortical neural encoding of naturally uttered speech. Speech conditions were clean, 0 dB, -3 dB and -6 dB SNR.",
-  "methods_description": "Participants sat in a darkened sound-isolating booth and rested or watched silent captioned videos while EEG was recorded in BrainVision format. Stimuli were presented at 65 dB SPL per story through ER-2 insert earphones and an RME Babyface Pro sound card, controlled with custom expyfun Python scripts. Stimuli were 10-minute randomized 40 Hz click trains and 30 minutes of peaky speech per SNR condition, with story files randomized. Trigger codes marked trial onset and trial identity.",
+  "description": "EEG dataset of auditory brainstem responses (ABRs) recorded from 25 normal-hearing adults listening to continuous peaky speech from one to five simultaneous male talkers, plus click trains. The dataset was designed to characterize how speech masking affects subcortical neural encoding of naturally uttered speech. It includes raw BrainVision recordings, event files, and stimulus regressors.",
+  "methods_description": "Participants sat in a darkened sound-isolating booth and rested or watched silent captioned videos while stimuli were presented through ER-2 insert earphones at 65 dB SPL per story (48 kHz, RME Babyface Pro). Conditions were 40 Hz randomized click trains (10 minutes) and peaky speech at four SNRs (clean, 0, -3, -6 dB; 1, 2, 3, or 5 talkers), 30 minutes per SNR, with randomized story tokens. Stimulus control used custom Python scripts with expyfun, and trial information was encoded in trigger values.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -22,13 +22,13 @@
       "term": "auditory brainstem response"
     },
     {
+      "term": "continuous speech"
+    },
+    {
       "term": "speech masking"
     },
     {
       "term": "peaky speech"
-    },
-    {
-      "term": "continuous speech"
     },
     {
       "term": "subcortical encoding"
